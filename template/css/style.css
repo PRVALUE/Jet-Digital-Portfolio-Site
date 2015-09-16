@@ -6950,4 +6950,18 @@ h6.media-heading {
     background: #000000;
   }
 }
+
+.joinbox {
+  border:1px solid rgb(231,232,232);
+  background-color: rgb(231,232,232);
+  width: 90%;
+  color: rgb(51,178,215);
+  padding: 5px;
+  margin: 1px;
+  cursor:pointer;
+}
+.blue {
+  background-color: rgb(51,178,215);
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
