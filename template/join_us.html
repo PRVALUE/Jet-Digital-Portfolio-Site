@@ -16,12 +16,12 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="images/favicon.ico">
 
-		<!-- Web Fonts -->
+<!-- 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
-
+-->
 		<!-- Bootstrap core CSS -->
 		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
@@ -151,11 +151,11 @@
 													</li>
 													<!-- mega-menu start -->
 													<li class="dropdown mega-menu">
-														<a class="dropdown-toggle scroller" href="index.html" >服务</a>
+														<a class="dropdown-toggle scroller" href="index.html#服务" >服务</a>
 													</li class="dropdown">
 													<!-- mega-menu end -->
 													<li class="dropdown">
-														<a class="dropdown-toggle  scroller" href="index.html">案例</a>
+														<a class="dropdown-toggle  scroller" href="index.html#案例">案例</a>
 													</li>
 													<!-- mega-menu start -->													
 													<li class="dropdown mega-menu narrow active">
@@ -168,7 +168,7 @@
 														
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-toggle scroller" href="index.html">博客</a>
+														<a class="dropdown-toggle scroller" href="index.html#博客">博客</a>
 													</li>
 												</ul>
 											</div>
@@ -218,12 +218,12 @@
 
 			<section class="pv-30"style="padding-bottom:0;padding-top:0">
 				<div class="container" style="background-color:white;padding-top:50px;padding-bottom:50px;width:100%">
-					<div class="row">
-						<div id="request" class="col-md-5 col-md-offset-1">
+					<div id="job" class="row">
+						<div id="request" class="col-md-5 col-md-offset-1 web-right">
 							<p>岗位职责：<br>1.与客户进行良好的沟通及协调，深度理解客户需求；<br>2.根据客户需求制定执行计划并推进计划的执行；<br>3.撰写日常报告，协助客户经理的工作<br>4.具有一定文字撰写基础，需撰写基本传播稿件；<br>岗位要求：<br>1.热爱数字营销行业，喜欢写作，网络深度用户；<br>2.熟练运用Word、Excel、PowerPoint等办公软件，具备一定图片处理功力，会运用PS、AI等图片处理软件；具备优秀英语表达能力者优先；<br>3.具备1年及以上数字营销、广告、公关等相关代理公司经验；<br>4.本科及以上学历。</p>
 							<br>
 						</div>
-						<div id="jall" class="col-md-3 col-md-offset-1">
+						<div id="jall" class="col-md-3 col-md-offset-1 web-left">
 							<div id="j1" class="joinbox join">客户执行</div>
 							<div id="j2" class="joinbox join">客户经理</div>
 							<div id="j3" class="joinbox join">文案</div>
@@ -314,7 +314,13 @@
 		<script type="text/javascript" src="js/custom.js"></script>
 		<script src="js/theme.js"></script>
 
+	
+
 		<script type="text/javascript">
+
+	        browserRedirect();
+
+			$(document).ready(function(){
 				$("#j1").click(function() {
 						$(".join").removeClass("blue")
 						$(this).addClass("blue")
@@ -378,6 +384,48 @@
     					.end()
     					.append('<p>岗位要求：<br>1.社交网络深度用户，热点潮词信手拈来，脑洞时刻绽开，能提供有价值的叨逼叨；<br>2.广告、新闻传播、市场营销等相关专业，本科在读大学生；<br>3.每周保证至少三天工作时间，半年以上，希望在广告业长期发展；<br>4.表达清晰，执行力强；愿意学习和接受挑战。</p>');
 					});
-		</script>
+				});
+
+	        function browserRedirect() {
+	            var sUserAgent = navigator.userAgent.toLowerCase();
+	            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+	            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+	            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+	            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+	            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+	            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+	            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+	            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+	            var str_div_job = '\
+	            	<div id="job" class="row">\
+	            		<div id="jall" class="col-md-3 col-md-offset-1 web-left">\
+	            			<div id="j1" class="joinbox join">客户执行</div>\
+	            			<div id="j2" class="joinbox join">客户经理</div>\
+	            			<div id="j3" class="joinbox join">文案</div>\
+	            			<div id="j4" class="joinbox join">策划经理</div>\
+	            			<div id="j5" class="joinbox join">美术指导</div>\
+	            			<div id="j6" class="joinbox join">网页前端程序设计师</div>\
+	            			<div id="j7" class="joinbox join">实习生</div>\
+            			</div>\
+            			<div id="request" class="col-md-5 col-md-offset-1 web-right">\
+            				<p>岗位职责：\
+            				<br>1.与客户进行良好的沟通及协调，深度理解客户需求；<br>\
+            				2.根据客户需求制定执行计划并推进计划的执行；<br>\
+            				3.撰写日常报告，协助客户经理的工作<br>\
+            				4.具有一定文字撰写基础，需撰写基本传播稿件；<br>\
+            				岗位要求：<br>\
+            				1.热爱数字营销行业，喜欢写作，网络深度用户；<br>\
+            				2.熟练运用Word、Excel、PowerPoint等办公软件，具备一定图片处理功力，会运用PS、AI等图片处理软件；具备优秀英语表达能力者优先；<br>\
+            				3.具备1年及以上数字营销、广告、公关等相关代理公司经验；<br>\
+            				4.本科及以上学历。</p><br></div></div>';
+	            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+	            	$("#job").ready(function() {
+	            		$("#job").replaceWith($(str_div_job));
+					});
+	            } else {
+	                return true;
+	            }
+	        }
+    	</script>
 	</body>
 </html>
