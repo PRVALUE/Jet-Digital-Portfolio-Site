@@ -256,54 +256,58 @@
 		<script type="text/javascript" src="plugins/jquery.min.js"></script>
 
 		<script type="text/javascript">
-			var kdlk = '<li data-transition="random-static" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="凯迪拉克"><img src="images/case-kdlk.png" alt="slidebg1" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover"><div class="tp-caption sfb fadeout large_white"data-x="center"data-y="center"data-speed="700"data-start="1000"data-easing="easeOutQuad"data-end="10000"></div></li>';
-			var	kdy = '<li data-transition="random-static" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="卡地亚">\
-								<img src="images/case-kdy.png" alt="slidebg2" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">\
-								<div class="tp-caption sfb fadeout large_white"\
-									data-x="center"\
-									data-y="100"\
-									data-speed="700"\
-									data-start="1000"\
-									data-easing="easeOutQuad"\
-									data-end="10000">\
-								</div>\
-								</li>';
-
-			var htc = '<li data-transition="random-static" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="HTC">\
-								<img src="images/case-htc.png" alt="slidebg2" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">\
-								<div class="tp-caption sfb fadeout large_white"\
-									data-x="center"\
-									data-y="150"\
-									data-speed="700"\
-									data-start="1000"\
-									data-easing="easeOutQuad"\
-									data-end="10000">\
-								</div>\
-								</li>';
-
-			var msy = '<li data-transition="random-static" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="美膳媛">\
-								<img src="images/case-msy.png" alt="slidebg2" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">\
-								<div class="tp-caption sfb fadeout large_white"\
-									data-x="center"\
-									data-y="150"\
-									data-speed="700"\
-									data-start="1000"\
-									data-easing="easeOutQuad"\
-									data-end="10000">\
-								</div>\
-								</li>';
-
-			var url = window.location.href;
-
+			
 			$(document).ready(function() {
-				if(url.substr(start [?  ])="?cover=kdlk"){
-         			$('#case').append(kdlk+kdy+htc+msy);
-				}if(url.substr(start [?  ])="?cover=kdy"){
-					$('#case').append(kdy+htc+msy+kdlk);
-				}if(url.substr(start [?  ])="?cover=htc"){
-					$('#case').append(htc+kdy+msy+kdlk);
-				}if(url.substr(start [?  ])="?cover=msy"){
-					$('#case').append(msy+htc+kdy+kdlk);
+
+				var kdlk = '<li data-transition="random-static" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="凯迪拉克"><img src="images/case-kdlk.png" alt="slidebg1" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover"><div class="tp-caption sfb fadeout large_white"data-x="center"data-y="center"data-speed="700"data-start="1000"data-easing="easeOutQuad"data-end="10000"></div></li>';
+
+				var	kdy = '<li data-transition="random-static" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="卡地亚">\
+									<img src="images/case-kdy.png" alt="slidebg2" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">\
+									<div class="tp-caption sfb fadeout large_white"\
+										data-x="center"\
+										data-y="100"\
+										data-speed="700"\
+										data-start="1000"\
+										data-easing="easeOutQuad"\
+										data-end="10000">\
+									</div>\
+									</li>';
+
+				var htc = '<li data-transition="random-static" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="HTC">\
+									<img src="images/case-htc.png" alt="slidebg2" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">\
+									<div class="tp-caption sfb fadeout large_white"\
+										data-x="center"\
+										data-y="150"\
+										data-speed="700"\
+										data-start="1000"\
+										data-easing="easeOutQuad"\
+										data-end="10000">\
+									</div>\
+									</li>';
+
+				var msy = '<li data-transition="random-static" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="美膳媛">\
+									<img src="images/case-msy.png" alt="slidebg2" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">\
+									<div class="tp-caption sfb fadeout large_white"\
+										data-x="center"\
+										data-y="150"\
+										data-speed="700"\
+										data-start="1000"\
+										data-easing="easeOutQuad"\
+										data-end="10000">\
+									</div>\
+									</li>';
+
+				var url = window.location.href;
+				var url_id = url.substr(url.indexOf('?'));
+
+				if(url_id == "?cover=kdlk"){
+         			$('#case').append(kdlk + kdy + htc + msy);
+				}else if(url_id == "?cover=kdy"){
+					$('#case').append(kdy + htc + msy + kdlk);
+				}else if(url_id == "?cover=htc"){
+					$('#case').append(htc + msy + kdlk + kdy);
+				}else if(url_id == "?cover=msy"){
+					$('#case').append(msy + kdlk + kdy + htc);
 				}
 			});
 		</script>
