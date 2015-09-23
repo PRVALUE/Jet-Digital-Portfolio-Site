@@ -1081,18 +1081,18 @@
 				messages: {
 					name: {
 						required: "Please specify your name",
-						minlength: "Your name must be longer than 2 characters"
+						minlength: "名字长度少于2"
 					},
 					email: {
 						required: "We need your email address to contact you",
-						email: "Please enter a valid email address e.g. name@domain.com"
+						email: "输入正确的邮箱"
 					},
 					subject: {
 						required: "Please enter a subject"
 					},
 					message: {
 						required: "Please enter a message",
-						minlength: "Your message must be longer than 10 characters"
+						minlength: "至少10个字"
 					}					
 				},
 				errorElement: "span",

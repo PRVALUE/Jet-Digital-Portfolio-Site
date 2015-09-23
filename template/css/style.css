@@ -28,10 +28,10 @@ h4,
 h5,
 h6,
 .navbar .navbar-nav {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Microsoft YaHei" ! important;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Microsoft YaHei" ! important;
 }
 .logo-font {
   font-family: 'Pacifico', cursive, sans-serif;
@@ -6963,5 +6963,18 @@ h6.media-heading {
 .blue {
   background-color: rgb(51,178,215);
   color: white;
+}
+.radius_resource {
+  width: 50%;
+  border: 1px rgb(225,225,225) solid;
+  -webkit-border-radius: 100px;
+  background-color:rgb(225,225,225);
+  font-size:20px;
+  margin: 0 25%;
+  margin-bottom: 20px;
+  color: black;
+}
+.changecolor {
+  background-color: rgb(51,177,215);
 }
 /*# sourceMappingURL=style.css.map */
