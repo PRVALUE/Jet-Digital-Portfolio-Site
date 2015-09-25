@@ -6977,4 +6977,31 @@ h6.media-heading {
 .changecolor {
   background-color: rgb(51,177,215);
 }
+.index_title{
+  color:white;
+  font-size:34px;
+  font-family: 'Microsoft YaHei';
+}
+.index_title2{
+  color:white;
+  font-size:48px;
+  font-family: 'Microsoft YaHei';
+}
+.index_title3{
+  color:white;
+  font-size:14px;
+  font-family: 'Microsoft YaHei';
+}
+.contact_us{
+  padding-top:20px;
+  padding-bottom:20px;
+  width:100%
+}
+.circle_{
+  padding-left:45px;
+  padding-right:45px
+}
+.padding_100{
+  padding:100px 100px
+}
 /*# sourceMappingURL=style.css.map */
