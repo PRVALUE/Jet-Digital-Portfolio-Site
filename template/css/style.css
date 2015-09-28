@@ -6967,7 +6967,7 @@ h6.media-heading {
 .radius_resource {
   width: 50%;
   border: 1px rgb(225,225,225) solid;
-  -webkit-border-radius: 100px;
+  border-radius: 100px;
   background-color:rgb(225,225,225);
   font-size:20px;
   margin: 0 25%;
